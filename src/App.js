@@ -5,8 +5,10 @@ import Routes from './routes/routes';
 function App() {
   return (
     <>
-      <Routes />
       <Navbar />
+      <div style={{padding: '50px 80px'}} >
+        <Routes />
+      </div>
     </>
   );
 }

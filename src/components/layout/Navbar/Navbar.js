@@ -3,7 +3,7 @@ import CustomLink from './CustomLink';
 import './Navbar.css'
 
 const Navbar = () => {
-    const routes = [
+    const links = [
         { href: '/', name: 'Home' },
         { href: '/link1', name: 'Link 1' },
         { href: '/link2', name: 'Link 2' }
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div className="topNav" >
             {
-                routes.map(
+                links.map(
                     r => <CustomLink {...r} />
                 )
             }
