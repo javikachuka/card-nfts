@@ -1,14 +1,16 @@
 import React from 'react';
 import { Route } from "wouter";
+import Detail from '../components/content/Detail/Detail';
 import Home from '../components/content/Home';
-import Page1 from '../components/content/Page1';
+import MyNFTS from '../components/content/MyNFTS';
 import Page2 from '../components/content/Page2';
 
 const Routes = () => {
     return [
         <Route path="/" exact component={Home} />,
-        <Route path="/link1" exact component={Page1} />,
+        <Route path="/myNFTS" exact component={MyNFTS} />,
         <Route path="/link2" exact component={Page2} />,
+        <Route path="/nft/:id" exact component={Detail} />,
     ]
 
 

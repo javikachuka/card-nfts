@@ -1,0 +1,37 @@
+.card-info {
+    display: inherit;
+    flex-direction: inherit;
+    border-radius: 5px;
+    border: 1px solid rgb(229, 232, 235);
+    max-width: 600px;
+    max-height: 600px;
+    align-self: center;
+    margin: 20px 0px;
+    
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 15%;
+}
+.item-image{
+    max-width: 100%;
+    align-self: center;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 576px) {
+    .card-info img {
+        min-width: 250px;
+        min-height: 250px;
+        margin: 5px;
+    }
+    .card-info {
+        min-width: 350px;
+        min-height: 350px;
+        
+    }
+}

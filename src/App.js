@@ -1,14 +1,18 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar/Navbar';
 import Routes from './routes/routes';
+import './App.css'
 
 function App() {
   return (
     <>
       <Navbar />
-      <div style={{padding: '50px 80px'}} >
+      <main>
         <Routes />
-      </div>
+      </main>
+      <footer>
+        <h3>Developed by @</h3>
+      </footer>
     </>
   );
 }
